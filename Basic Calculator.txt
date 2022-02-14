@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main
+
+{
+	public static void main(String[] args) {
+	    char op;
+	    double n,m,total;
+	    Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Operator(+,-,*,/,%):");
+		op=sc.next().charAt(0);
+		
+		System.out.println("Enter Any Two Numbers: ");
+		n=sc.nextDouble();
+		m=sc.nextDouble();
+		
+		switch(op){
+		    case '+':
+		        total=n+m;
+		        System.out.println(total);
+		        break;
+		    case '-':
+		        total=n-m;
+		        System.out.println(total);
+		        break;
+		    case '*':
+		        total=n*m;
+		        System.out.println(total);
+		        break;
+		   case '/':
+		        total=n/m;
+		        System.out.println(total);
+		        break; 
+		  case '%':
+		        total=n%m;
+		        System.out.println(total);
+		        break;
+		  default:
+		  System.out.println("Invalid operators");
+		  break;
+		}
+	}
+}
+
