@@ -1,0 +1,24 @@
+
+import java.util.*;
+ 
+public class Main
+{
+ public static void main(String args[])
+ {
+         int i,c=0,n,x=0,y=1;
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter a number to generate fibonacci series upto nth term");
+     n=sc.nextInt();
+  
+ 
+ System.out.println("Fibonacci series upto "+n+" is :-");
+   while(c<=n)
+   {
+       System.out.print(c+" ");
+       x=y;
+       y=c;
+       c=x+y;
+   }
+ }
+}
+
