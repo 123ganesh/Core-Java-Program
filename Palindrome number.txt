@@ -1,21 +1,24 @@
 import java.util.*;
-public class Main{  
-
- public static void main(String args[]){  
-
-  int i,fact=1,n;  
-  Scanner sc = new Scanner(System.in);
-  System.out.println("Enter the Factorial Numbers:" );
-  n = sc.nextInt();
-
-  for(i=1;i<=n;i++){    
-
-      fact=fact*i;    
-
-  }    
-
-  System.out.println("Factorial of "+n+" is: "+fact);    
-
- }  
-
+public class Main
+{
+   public static void main(String args[])
+   {
+      String n, r = "";
+      Scanner sc = new Scanner(System.in);
+ 
+      System.out.println("Enter a string:");
+      n = sc.nextLine();
+ 
+      int length = n.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         r = r + n.charAt(i);
+ 
+      if (n.equals(r))
+         System.out.println(n+" is a palindrome");
+      else
+         System.out.println(n+" is not a palindrome");
+ 
+   }
 }
+
